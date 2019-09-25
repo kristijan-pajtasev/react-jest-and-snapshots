@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import App from './App';
+import PeopleList from './PeopleList';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
 // it('renders without crashing', () => {
@@ -11,7 +11,7 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 it('renders without crashing', () => {
 
     const renderer = new ShallowRenderer();
-    renderer.render(<App/>);
+    renderer.render(<PeopleList/>);
     const result = renderer.getRenderOutput();
 
     expect(result.type).toBe('div');
