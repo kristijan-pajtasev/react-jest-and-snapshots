@@ -8,7 +8,7 @@ const PeopleList = (props) => {
       <div>
         <div>People:</div>
         <ul>
-          { (props.people || []).map(person => <Person {...person} />) }
+          { (props.people || []).map(person => <Person handleClick={props.handleClick} {...person} />) }
         </ul>
       </div>
   );

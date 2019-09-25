@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Person = (props) => (
-    <div>
+    <div onClick={props.handleClick}>
         <div>{props.firstName}</div>
         <div>{props.secondName}</div>
     </div>
