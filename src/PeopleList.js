@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './PeopleList.css';
 import Person from "./Person.";
 
