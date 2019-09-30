@@ -1,8 +1,7 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import PeopleList from './PeopleList';
 import TestRenderer from 'react-test-renderer';
-import {render, fireEvent, waitForElement} from '@testing-library/react'
+import {render, fireEvent} from '@testing-library/react'
 
 const pplList = [
     {id: 1, firstName: "John", lastName: "Doe"}
