@@ -6,7 +6,7 @@ const pplList = [
     {id: 1, firstName: "John", lastName: "Doe"}
 ];
 
-describe("People list with full renderer ", () => {
+describe("People list with @testing/library ", () => {
     it('trigger click handler', () => {
 
         const clickHandler = jest.fn();
