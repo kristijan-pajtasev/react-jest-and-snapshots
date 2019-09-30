@@ -20,10 +20,12 @@ describe("People list with full renderer ", () => {
 
     it('trigger click handler', () => {
 
-        const {getByTestId} = render(<PeopleList people={pplList}/>);
+        const clickHandler = jest.fn();
 
-        fireEvent.click(getByTestId('person-1'))
+        const {getByTestId} = render(<PeopleList handleClick={clickHandler} people={pplList}/>);
 
-        // expect(tree).toMatchSnapshot();
+        fireEvent.click(getByTestId('person-1'));
+
+        expect(clickHandler).toHaveBeenCalled();
     });
 });
