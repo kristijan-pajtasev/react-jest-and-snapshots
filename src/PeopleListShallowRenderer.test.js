@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import PeopleList from './PeopleList';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
