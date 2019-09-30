@@ -6,7 +6,9 @@ exports[`People list with full renderer  renders without crashing 1`] = `
     People:
   </div>
   <ul>
-    <div>
+    <div
+      data-testid="person-1"
+    >
       <div>
         John
       </div>
