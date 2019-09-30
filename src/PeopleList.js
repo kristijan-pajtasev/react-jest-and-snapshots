@@ -11,6 +11,6 @@ const PeopleList = (props) => {
         </ul>
       </div>
   );
-}
+};
 
 export default PeopleList;
