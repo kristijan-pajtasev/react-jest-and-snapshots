@@ -1,19 +1,14 @@
 import React from 'react';
-import PeopleList from './PeopleList';
+import Counter from './Counter';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
-
-const pplList = [
-    {firstName: "John", lastName: "Doe"}
-];
-
-describe("People list with shallow renderer ", () => {
+describe("Counter stateless component ", () => {
 
     it('renders without crashing', () => {
 
         const renderer = new ShallowRenderer();
         const tree = renderer
-            .render(<PeopleList people={pplList}/>);
+            .render(<Counter/>);
         expect(tree).toMatchSnapshot();
     });
 });
